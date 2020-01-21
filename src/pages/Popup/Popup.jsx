@@ -51,10 +51,10 @@ const Popup = () => {
           <Button
             color="primary"
             variant="contained"
+            title={ chrome.i18n.getUILanguage() === 'ja' ? "キャプ" : "Capture" }
             onClick={() => capture(subs, iframe)}
           >
-            <JA>キャプ</JA>
-            <EN>Capture</EN>
+            📷
           </Button>
           <span style={{ width: 10 }}>&nbsp;&nbsp;</span>
           <FormControlLabel
